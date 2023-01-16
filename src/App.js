@@ -1,18 +1,18 @@
 import './App.css';
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
           <Routes>
               <Route>
                   <Route exact path="/" element={<Resources />} />
                   <Route exact path="/about" element={<About />} />
               </Route>
           </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );
